@@ -117,13 +117,8 @@
                     })();
         }
         function UpdateUserRole(uname, role, callback) {
-            (function() {$http({
-                            method: 'PUT',
-                            url: 'http://localhost:8080/admin/role/' +uname,
-                            data: { "role" : role
-                             },
-                            headers: {'Content-Type': 'application/json'}
-                    }).then(function(response) {
+            (function() {$http.put('http://localhost:8080/admin/role/' +uname+'/'+role)
+                            .then(function(response) {
                             callback(response);
                     });
                     })();

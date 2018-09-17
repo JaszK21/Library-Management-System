@@ -13,7 +13,7 @@
         
         function updaterole() {
             vm.dataLoading = true;
-            UserService.UpdateUserRole(vm.ur.uname, "ADMIN", function (response) {
+            UserService.UpdateUserRole(vm.ur.uname, "admin", function (response) {
                 if (response.data=="") {
                     FlashService.Success('Role Updated Successfully', true);
                     $location.path('/admin');

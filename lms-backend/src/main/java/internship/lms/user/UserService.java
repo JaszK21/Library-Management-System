@@ -108,6 +108,7 @@ public class UserService {
 
 	public void updateRole(String role, String username) {
 		this.getUser(username).setRole(role);
+		userRepository.save(this.getUser(username));
 		
 	}
 }

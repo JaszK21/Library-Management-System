@@ -76,8 +76,8 @@ public class UserController {
 		userService.updateUser(user);
 	}
 	
-	@RequestMapping(method=RequestMethod.PUT, value="/admin/role/{uname}")
-	public void updateRole(@RequestBody String role, @PathVariable String uname) {
+	@RequestMapping(method=RequestMethod.PUT, value="/admin/role/{uname}/{role}")
+	public void updateRole(@PathVariable String role, @PathVariable String uname) {
 		userService.updateRole(role, uname);
 	}
 	
