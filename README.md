@@ -34,5 +34,3 @@ You will need to add a user with role admin manually using Postman or SQL as the
 * CSS- UI
 * BootStrap- UI
 
-##Author
-* **Shorya Jain** - https://github.com/shoryajain 
